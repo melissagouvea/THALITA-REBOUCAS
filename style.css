@@ -81,7 +81,7 @@ nav a:hover {
 /*INÍCIO */
 
 .inicio {
-    min-height: 630px;
+    min-height: 580px;
     display: flex;
     align-items: center;
     background-color: #f9dfe5;
@@ -124,21 +124,20 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-.imagem-inicio {
+.inicio-imagem {
+    width: 50%;
+    height: 570px;
     display: flex;
-    align-items: flex-end;
+    align-items: end;
     justify-content: center;
-    overflow: hidden;
 }
 
-.imagem-inicio img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
-    object-position: center bottom;
-    display: block;
+.inicio-imagem img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 /*PUBLICAÇÕES */
 
