@@ -602,7 +602,7 @@ nav a:hover {
 
 .curiosidade {
     padding: 80px 15%;
-    background-color:#d6336c;
+    background-color:#fffaf7;
     color:#fffaf7;
     background-size: cover;
     background-position: center;
@@ -616,7 +616,7 @@ nav a:hover {
 }
 
 .curiosidade h2 {
-    color:#fbf6f9;
+    color:#e54b81;
     max-width: 700px;
     margin: 10px auto 20px;
     font-family: "DM Serif Display", serif;
@@ -628,9 +628,12 @@ nav a:hover {
 .curiosidade p:last-child {
     max-width: 600px;
     margin: 0 auto;
-    color: #fbf6f9;
+    color:#675b62;
     font-size: 13px;
     line-height: 1.7;
+}
+.curiosidade .titulo-pequeno{
+    color:#d6336c;
 }
 
 
