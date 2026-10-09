@@ -616,6 +616,7 @@ nav a:hover {
 }
 
 .curiosidade h2 {
+    color:#fbf6f9;
     max-width: 700px;
     margin: 10px auto 20px;
     font-family: "DM Serif Display", serif;
@@ -627,7 +628,7 @@ nav a:hover {
 .curiosidade p:last-child {
     max-width: 600px;
     margin: 0 auto;
-    color: #70636a;
+    color: #fbf6f9;
     font-size: 13px;
     line-height: 1.7;
 }
