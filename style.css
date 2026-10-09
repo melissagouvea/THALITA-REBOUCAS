@@ -1,0 +1,1105 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #30242c;
+    background-color: #fffaf7;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* CABEÇALHO*/
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background-color: #fffaf7;
+    border-bottom: 1px solid #f0d8df;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+    color: #30242c;
+}
+
+.logo span {
+    color: #d6336c;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #30242c;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d6336c;
+}
+
+
+/*TÍTULOS MENORES*/
+
+.titulo-pequeno {
+    color: #c52f61;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/*INÍCIO */
+
+.inicio {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    background-color: #f9dfe5;
+}
+
+.inicio-texto {
+    width: 50%;
+    padding-left: 10%;
+}
+
+.inicio h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 58px;
+    font-weight: normal;
+    line-height: 1.05;
+    margin: 15px 0;
+}
+
+.inicio-texto > p:not(.titulo-pequeno) {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #d6336c;
+    color: white;
+    border-radius: 25px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #b92557;
+    transform: translateY(-2px);
+}
+
+.inicio-imagem {
+    width: 50%;
+    height: 570px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.inicio-imagem img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*PUBLICAÇÕES */
+
+.publicacoes {
+    padding: 90px 8%;
+    background-color: #fffaf7;
+    text-align: center;
+}
+
+.publicacoes h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 44px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.texto-publicacoes {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    color: #70636a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.publicacoes-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.publicacao {
+    background-color: #fbe8ed;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.publicacao:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(48, 36, 44, 0.10);
+}
+
+.publicacao img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.publicacao-texto {
+    padding: 25px;
+}
+
+.data {
+    color: #d6336c;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.publicacao h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.publicacao-texto > p:not(.data) {
+    color: #70636a;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.ler-mais {
+    color: #d6336c;
+    font-size: 11px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ler-mais:hover {
+    color: #b92557;
+}
+
+
+/*SOBRE*/
+
+.sobre {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 12%;
+    background-color: #fffaf7;
+}
+
+.sobre-imagem {
+    width: 35%;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 #f3cbd5;
+}
+
+.sobre-texto {
+    width: 55%;
+}
+
+.sobre-texto h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+.sobre-texto p:not(.titulo-pequeno) {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #675b62;
+    margin-bottom: 15px;
+}
+
+
+/*LIVROS - PÁGINA INICIAL*/
+
+.livros {
+    padding: 70px 8%;
+    background-color: #fbe8ed;
+    text-align: center;
+}
+
+.livros h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 10px 0 35px;
+}
+
+.livros-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.livro {
+    width: 230px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(48, 36, 44, 0.08);
+}
+
+.livro img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.livro h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.livro p {
+    color: #70636a;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.livro button {
+    border: none;
+    background-color: #d6336c;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.livro button:hover {
+    background-color: #b92557;
+}
+
+
+/*BLOG*/
+
+.blog {
+    padding: 80px 8%;
+    background-color: #fffaf7;
+    text-align: center;
+}
+
+.blog h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 10px 0 40px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    width: 32%;
+    min-height: 250px;
+    padding: 35px 28px;
+    background-color: #f0d8df;
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(214, 51, 108, 0.10);
+}
+
+.blog-card h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.blog-card p {
+    color: #70636a;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.blog-card a {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #d6336c;
+    color: white;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.blog-card a:hover {
+    background-color: #b92557;
+}
+
+
+/*TÍTULO DAS PÁGINAS INTERNAS*/
+
+.pagina-titulo {
+    padding: 80px 20px 60px;
+    background-color: #f9dfe5;
+    text-align: center;
+}
+
+.pagina-titulo h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 10px 0 15px;
+}
+
+.pagina-titulo > p:last-child {
+    max-width: 550px;
+    margin: 0 auto;
+    color: #675b62;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* PÁGINA LIVROS*/
+
+.todos-livros {
+    padding: 70px 8%;
+    background-color: #fffaf7;
+}
+
+.livros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.livro-card {
+    background-color: white;
+    border: 1px solid #f0d8df;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.livro-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(214, 51, 108, 0.10);
+}
+
+.livro-card > img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #fbe8ed;
+}
+
+.livro-info {
+    padding: 22px;
+}
+
+.livro-info .categoria {
+    color: #d6336c;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.livro-info h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #30242c;
+    margin-bottom: 10px;
+}
+
+.livro-info > p:last-child {
+    color: #70636a;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* PÁGINA DA AUTORA */
+
+.historia-autora {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 12%;
+    background-color: #fffaf7;
+}
+
+.historia-imagem {
+    width: 40%;
+}
+
+.historia-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 12px 12px 0 #f3cbd5;
+}
+
+.historia-texto {
+    width: 55%;
+}
+
+.historia-texto h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+.historia-texto p:not(.titulo-pequeno) {
+    color: #675b62;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/*CARREIRA*/
+
+.carreira {
+    padding: 75px 8%;
+    background-color: #fbe8ed;
+    text-align: center;
+}
+
+.carreira h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 10px 0 40px;
+}
+
+.carreira-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carreira-card {
+    width: 30%;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #f0d8df;
+    transition: 0.3s;
+}
+
+.carreira-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(214, 51, 108, 0.10);
+}
+
+.carreira-card img {
+    width: 55px;
+    margin: 0 auto;
+}
+
+.carreira-card span {
+    font-size: 40px;
+}
+
+.carreira-card h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 23px;
+    margin: 15px 0 10px;
+}
+
+.carreira-card p {
+    color: #70636a;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* CURIOSIDADE*/
+
+.curiosidade {
+    padding: 80px 15%;
+    background-image: url("/assets/fundoautora.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.curiosidade > div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.curiosidade h2 {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    font-family: "DM Serif Display", serif;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.curiosidade p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #70636a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* FRASE DA AUTORA*/
+
+.frase {
+    padding: 70px 20px;
+    background-color: #f9dfe5;
+    color: #d6336c;
+    text-align: center;
+}
+
+.frase p {
+    font-family: "Pacifico", cursive;
+    font-size: 27px;
+}
+
+
+/* PÁGINA DE FILME*/
+
+.filmes {
+    padding: 75px 8%;
+    background-color: #fffaf7;
+    text-align: center;
+}
+
+.filmes h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 10px 0 40px;
+}
+
+.filmes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filme-card {
+    display: flex;
+    background-color: white;
+    border: 1px solid #f0d8df;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.filme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(214, 51, 108, 0.10);
+}
+
+.filme-imagem {
+    width: 40%;
+    min-height: 250px;
+    background-color: #fbe8ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filme-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filme-texto {
+    width: 60%;
+    padding: 25px;
+}
+
+.filme-texto .categoria {
+    color: #d6336c;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.filme-texto h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.filme-texto p:last-child {
+    color: #70636a;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/*FRASE DOS FILMES */
+
+.filmes-frase {
+    padding: 80px 20px;
+    background-color: #f9dfe5;
+    text-align: center;
+}
+
+.filmes-frase h2 {
+    max-width: 650px;
+    margin: 10px auto 15px;
+    font-family: "DM Serif Display", serif;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.filmes-frase > p:last-child {
+    color: #70636a;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/*  BOTÃO VOLTAR */
+
+.voltar {
+    padding: 20px 20px 70px;
+    background-color: #fffaf7;
+    text-align: center;
+}
+
+
+/* FOOTER*/
+
+footer {
+    padding: 35px 8%;
+    background-color: #30242c;
+    color: #fffaf7;
+    text-align: center;
+}
+
+footer .logo {
+    color: #fffaf7;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    color: #d8cbd0;
+}
+
+
+/* RESPONSIVIDADE NO TABLET*/
+
+@media (max-width: 1000px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .inicio h1 {
+        font-size: 45px;
+    }
+
+    .sobre {
+        padding: 70px 8%;
+        gap: 50px;
+    }
+
+    .blog-cards {
+        flex-wrap: wrap;
+    }
+
+    .blog-card {
+        width: 45%;
+    }
+
+    .publicacoes-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .livros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filmes-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* CELULAR*/
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+
+    /* INÍCIO */
+
+    .inicio {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .inicio-texto {
+        width: 100%;
+        padding: 60px 8% 40px;
+        text-align: center;
+    }
+
+    .inicio-texto > p:not(.titulo-pequeno) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio-imagem {
+        width: 100%;
+        height: 400px;
+    }
+
+    .inicio-imagem img {
+        width: 90%;
+    }
+
+
+    /* PUBLICAÇÕES */
+
+    .publicacoes {
+        padding: 60px 6%;
+    }
+
+    .publicacoes h2 {
+        font-size: 36px;
+    }
+
+    .texto-publicacoes {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .publicacoes-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .publicacao img {
+        height: 210px;
+    }
+
+    .publicacao-texto {
+        padding: 22px;
+    }
+
+    .publicacao h3 {
+        font-size: 22px;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        flex-direction: column;
+        padding: 60px 8%;
+        gap: 40px;
+    }
+
+    .sobre-imagem,
+    .sobre-texto {
+        width: 100%;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        font-size: 36px;
+    }
+
+
+    /* LIVROS DA HOME */
+
+    .livros {
+        padding: 60px 6%;
+    }
+
+    .livros h2 {
+        font-size: 36px;
+    }
+
+    .livro {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .livros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* BLOG */
+
+    .blog {
+        padding: 60px 6%;
+    }
+
+    .blog h2 {
+        font-size: 36px;
+    }
+
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* TÍTULOS DAS PÁGINAS */
+
+    .pagina-titulo {
+        padding: 60px 20px 45px;
+    }
+
+    .pagina-titulo h1 {
+        font-size: 40px;
+    }
+
+
+    /* LIVROS - PÁGINA */
+
+    .todos-livros {
+        padding: 60px 6%;
+    }
+
+    .livros-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+
+    /* AUTORA */
+
+    .historia-autora {
+        flex-direction: column;
+        padding: 60px 8%;
+        gap: 40px;
+    }
+
+    .historia-imagem,
+    .historia-texto {
+        width: 100%;
+    }
+
+    .historia-texto {
+        text-align: center;
+    }
+
+    .historia-texto h2 {
+        font-size: 36px;
+    }
+
+    .carreira {
+        padding: 60px 6%;
+    }
+
+    .carreira h2 {
+        font-size: 36px;
+    }
+
+    .carreira-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carreira-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .curiosidade {
+        padding: 60px 8%;
+    }
+
+    .curiosidade h2 {
+        font-size: 30px;
+    }
+
+    .frase p {
+        font-size: 22px;
+    }
+
+
+    /* FILMES */
+
+    .filmes {
+        padding: 60px 6%;
+    }
+
+    .filmes h2 {
+        font-size: 36px;
+    }
+
+    .filmes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filme-card {
+        flex-direction: column;
+    }
+
+    .filme-imagem {
+        width: 100%;
+        height: 300px;
+    }
+
+    .filme-texto {
+        width: 100%;
+    }
+
+    .filmes-frase {
+        padding: 60px 8%;
+    }
+
+    .filmes-frase h2 {
+        font-size: 32px;
+    }
+
+
+    /* BOTÃO VOLTAR */
+
+    .voltar {
+        padding-bottom: 60px;
+    }
+
+
+    /*FOOTER */
+
+    footer {
+        padding: 30px 5%;
+    }
+}
